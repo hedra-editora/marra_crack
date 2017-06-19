@@ -9,6 +9,7 @@ rename:
 clean_arquivosgerais:
 	mv ~/Dropbox/ARQUIVOS_GERAIS/$(TITULO)_MIOLO_* ~/Dropbox/ARQUIVOS_GERAIS/OLD/
 delivery:
+	mv ~/Dropbox/ARQUIVOS_GERAIS/$(TITULO)_MIOLO_*.pdf ~/Dropbox/ARQUIVOS_GERAIS/OLD
 	cp $(TITULO)_MIOLO_$(GIT).pdf ~/Dropbox/ARQUIVOS_GERAIS/
 	echo $(GIT) '--- Entregue em' "$$(date)" >> ENTREGAS.txt
 
